@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.customer-list {
+  width: 350px;
+  border-right: 1px solid #ccc;
+}
+
+.customer-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.customer-card.selected {
+  background-color: lightblue;
+}
+
+.customer-details {
+  flex-grow: 1;
+  padding-left: 20px;
+  margin-left: 100px;
+
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 15px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px;
+}
